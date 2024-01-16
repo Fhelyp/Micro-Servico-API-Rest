@@ -2,12 +2,12 @@
 from flask import Flask, jsonify, request, render_template
 
 # ----------------------------------- FLASK -----------------------------------
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 # Funcionalidades / Endpoints
 @app.route('/')
 def homepage():
-  return render_template('index.html')
+    return render_template('index.html')
 
 @app.route('/intercom', methods=['GET', 'POST', 'DELETE'])
 def intercom():
