@@ -1,3 +1,7 @@
+[build]
+command = "python app.py"
+publish = "/"
+
 [tool.poetry]
 name = "conversas-abertas-intercom"
 version = "0.1.0"
