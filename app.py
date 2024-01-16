@@ -2,7 +2,7 @@
 from flask import Flask, jsonify, request, render_template
 
 # ----------------------------------- FLASK -----------------------------------
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, static_folder=None, template_folder='templates')
 
 # Funcionalidades / Endpoints
 @app.route('/')
