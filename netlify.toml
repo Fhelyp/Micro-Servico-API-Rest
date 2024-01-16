@@ -1,5 +1,5 @@
 [build]
-command = "python app.py"
+command = "python app.py & sleep 30 && pkill -f 'python app.py'"
 publish = "/"
 
 [tool.poetry]
