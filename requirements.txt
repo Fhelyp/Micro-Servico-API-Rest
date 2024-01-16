@@ -10,6 +10,7 @@ cachetools==4.2.2
 cachy==0.3.0
 certifi==2023.11.17
 cffi==1.14.6
+gunicorn==20.1.0
 chardet==4.0.0
 charset-normalizer==2.0.4
 cleo==0.8.1
