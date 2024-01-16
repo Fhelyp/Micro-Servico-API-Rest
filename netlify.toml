@@ -1,5 +1,5 @@
 [build]
-command = "gunicorn -b 0.0.0.0:5000 app:app"
+command = "gunicorn -b 0.0.0.0:8000 app:app"
 publish = "/"
 
 [tool.poetry]
