@@ -41,9 +41,6 @@ def intercom():
     resposta = {'total_count': count, 'conversas_abertas': ids_atuais}
     return jsonify(resposta)
 
-# Startar API
-app.run()
-
 
 # References:
 #https://www.digitalocean.com/community/tutorials/processing-incoming-request-data-in-flask-pt
