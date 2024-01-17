@@ -24,7 +24,7 @@ def intercom():
         with open('IDs_de_Conversa.txt', 'r') as arquivo:
           ids_atuais = arquivo.read()
         resposta = {'conversas_abertas': ids_atuais}
-        return jsonify(resposta)
+        return jsonify(resposta), 200, {'Content-Type': 'application/json'}
 
     # handle the DELETE request
     if request.method == 'DELETE':
@@ -34,7 +34,7 @@ def intercom():
         with open('IDs_de_Conversa.txt', 'w') as arquivo:
           arquivo.write(ids_atuais)
         resposta = {'conversas_abertas': ids_atuais}
-        return jsonify(resposta)
+        return jsonify(resposta), 200, {'Content-Type': 'application/json'}
 
     # otherwise handle the GET request
     count = len(ids_atuais.split())
