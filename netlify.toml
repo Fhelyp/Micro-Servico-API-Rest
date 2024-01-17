@@ -1,6 +1,7 @@
 [build]
-command = "python app.py & sleep 10"
-publish = "/"
+  command = "python app.py"
+  functions = "functions"
+  publish = "/"
 
 [tool.poetry]
 name = "conversas-abertas-intercom"
