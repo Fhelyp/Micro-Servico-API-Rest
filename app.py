@@ -39,7 +39,7 @@ def intercom():
     # otherwise handle the GET request
     count = len(ids_atuais.split())
     resposta = {'total_count': count, 'conversas_abertas': ids_atuais}
-    return jsonify(resposta)
+    return jsonify(resposta), 200, {'Content-Type': 'application/json'}
 
 
 # References:
